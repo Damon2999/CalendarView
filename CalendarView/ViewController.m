@@ -7,32 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "NSDate+CalExt.h"
+#import "CalendarView.h"
+#import "UIView+ViewKit.h"
 
-@interface CollectionViewCell : UICollectionViewCell
+@interface ViewController ()
 
-@property (nonatomic, weak) IBOutlet UILabel *label;
-@end
-
-@implementation CollectionViewCell
-
-
-
-@end
-
-
-
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
-{
-    int _currentMonthIndex;
-    HPMonth *_currentMonth;
-
-}
-
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UISlider *slider;
-
-@property (weak, nonatomic) IBOutlet UILabel *monthLabel;
 @end
 
 @implementation ViewController
@@ -40,38 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self monthChanged:_slider];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)monthChanged:(UISlider *)sender
+- (void)viewDidAppear:(BOOL)animated
 {
-    _currentMonthIndex = sender.value;
-    _currentMonth = [HPMonth monthAtIndex:_currentMonthIndex];
-    [_collectionView reloadData];
-    _monthLabel.text = @(_currentMonthIndex).stringValue;
+    [super viewDidAppear:animated];
+    CalendarView *view = [CalendarView loadNibForCurrentDevice];
+    view.center = self.view.center;
+    [self.view addSubview:view];
 }
 
-
-
-#pragma mark - UICollectionViewDataSource and UICollectionViewDelegate
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return _currentMonth.fullLength;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.label.text = _currentMonth.fullDays[indexPath.row];
-    
-    return cell;
-
-}
 
 @end

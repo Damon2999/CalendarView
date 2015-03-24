@@ -32,7 +32,7 @@
 @interface NSDate (CalExt)
 
 + (NSInteger)currentWeekDay;
-+ (HPMonth *)currentMonth;
++ (NSInteger)currentMonth;
 + (NSInteger)currentDay;
 - (BOOL)isLeapYear;
 

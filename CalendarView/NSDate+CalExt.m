@@ -80,6 +80,7 @@
     month.startWeekDay = startWeekIndex;
     month.endWeekDay = endWeekIndex;
     month.preMonthLength = [([[NSDate new] isLeapYear] ? leapMonthLength[preMonth - 1] : normalMonthLength [preMonth - 1]) integerValue];
+    month.month = comps.month;
     return month;
 }
 @end
@@ -91,11 +92,9 @@
     return [[NSCalendar currentCalendar] component:NSCalendarUnitWeekday fromDate:[NSDate new]];
 }
 
-+ (HPMonth *)currentMonth
++ (NSInteger)currentMonth
 {
-    NSInteger month = [[NSCalendar currentCalendar] component:NSCalendarUnitMonth fromDate:[NSDate new]];
-    
-    return [HPMonth monthAtIndex:month];
+    return [[NSCalendar currentCalendar] component:NSCalendarUnitMonth fromDate:[NSDate new]];
 }
 
 + (NSInteger)currentDay
