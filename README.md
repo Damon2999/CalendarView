@@ -1,4 +1,4 @@
-# HPFolderTableView
+# CalendarView
 <h2>What this plugin can do?</h2>  
 ![alt tag](https://github.com/shuangyu/CalendarView/blob/master/CalendarView/Resources/demo1.gif)
 
