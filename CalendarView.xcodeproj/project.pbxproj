@@ -30,7 +30,7 @@
 		FFF425781C070354006F513E /* CalendarViewCell_414.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF425631C070354006F513E /* CalendarViewCell_414.xib */; };
 		FFF425791C070354006F513E /* CalendarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425651C070354006F513E /* CalendarViewLayout.m */; };
 		FFF4257A1C070354006F513E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425671C070354006F513E /* ViewController.m */; };
-		FFF4257B1C070354006F513E /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFF425691C070354006F513E /* demo.gif */; };
+		FFF4257D1C0710CF006F513E /* demo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFF4257C1C0710CF006F513E /* demo1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 		FFF425651C070354006F513E /* CalendarViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewLayout.m; sourceTree = "<group>"; };
 		FFF425661C070354006F513E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FFF425671C070354006F513E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FFF425691C070354006F513E /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		FFF4257C1C0710CF006F513E /* demo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 		FFF425681C070354006F513E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FFF425691C070354006F513E /* demo.gif */,
+				FFF4257C1C0710CF006F513E /* demo1.gif */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -288,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFF4257B1C070354006F513E /* demo.gif in Resources */,
 				FFF425731C070354006F513E /* CalendarView_375.xib in Resources */,
 				67F1EA421ABFAF4A007A9FC8 /* Main.storyboard in Resources */,
 				FFF4256E1C070354006F513E /* CalendarHeaderView_320.xib in Resources */,
@@ -298,6 +297,7 @@
 				FFF425781C070354006F513E /* CalendarViewCell_414.xib in Resources */,
 				FFF425721C070354006F513E /* CalendarView_320.xib in Resources */,
 				67F1EA441ABFAF4A007A9FC8 /* Images.xcassets in Resources */,
+				FFF4257D1C0710CF006F513E /* demo1.gif in Resources */,
 				FFF425761C070354006F513E /* CalendarViewCell_320.xib in Resources */,
 				FFF425771C070354006F513E /* CalendarViewCell_375.xib in Resources */,
 				FFF4256F1C070354006F513E /* CalendarHeaderView_375.xib in Resources */,
