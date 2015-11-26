@@ -1,6 +1,6 @@
 # HPFolderTableView
 <h2>What this plugin can do?</h2>  
-![alt tag](https://github.com/shuangyu/HPFolderTableView/blob/master/FolderTableView/Resources/demo.gif)
+![alt tag](https://github.com/shuangyu/CalendarView/blob/master/CalendarView/Resources/demo.gif)
 
 <h2>How to use this plugin?</h2> 
 <b>Notice</b></br>
